@@ -33,6 +33,7 @@ const Manufactured = styled.div`
   position: absolute;
   bottom: 2.7rem;
   left: 1rem;
+  right: 1rem;
   text-decoration: ${(props) => (props.stock > 0 ? "none" : "line-through")};
 `;
 
@@ -43,6 +44,10 @@ const ItemFor = styled.div`
   position: absolute;
   padding: 2px;
   margin-top: 4px;
+`;
+
+const Name = styled.h2`
+
 `;
 
 const Card = ({
@@ -80,7 +85,7 @@ const Card = ({
         <Gradient>
           <Manufactured stock={stock}>
             <h4>{manufacture}</h4>
-            <h2>{name}</h2>
+            <Name>{name}</Name>
             <ItemFor>
               {targetText()}
             </ItemFor>

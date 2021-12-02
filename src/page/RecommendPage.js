@@ -31,6 +31,7 @@ const Container = styled.div`
 
 const SampleCard = styled(Card)`
   margin: 0 -33px 0 -33px;
+  word-break: keep-all;
 `;
 
 const FirstCard = styled(Card)`
@@ -54,6 +55,7 @@ function RecommendPage() {
   useEffect(() => {
     TaxiAPI.findTaxiSample(taxiId, { age, isMale }).then((res) => {
       setSamples(res.data);
+      console.log(res.data);
     });
   }, []);
 
@@ -97,7 +99,7 @@ function RecommendPage() {
                 stock={samples[0].stock}
               />
             )}
-            {samples.slice(1, samples.length).map((elem) => {
+            {samples.slice(1, 5).map((elem) => {
               return (
                 <SampleCard
                   onClick={() => onClick(elem.id, elem.stock)}
@@ -124,9 +126,17 @@ function RecommendPage() {
             <MiniCard />
           </MiniCards> */}
       <Placeholders>
-          <PlaceHolderMos length={1}/>
-          <PlaceHolderMos length={2}/>
-          <PlaceHolder length={3}/>
+          {samples.slice(6,samples.length).map((elem, index) => { return(
+            <PlaceHolderMos
+            onClick={() => onClick(elem.id, elem.stock)}
+            sampleImage={elem.sample.cardImage}
+            data={elem.sample.sampleInfo.explain.data}
+            title={elem.sample.sampleInfo.explain.title}
+            name={elem.sample.sampleInfo.name}
+            index={index}
+          />
+          );
+          })}
       </Placeholders>
     </Main>
   );

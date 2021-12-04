@@ -55,7 +55,7 @@ const Text_2 = styled.div`
 
 const Text_3 = styled.div`
     font-weight: bolder;
-    font-size: 0.983rem;
+    font-size: 0.9rem;
     width: 10.938rem;
     height: 0.813rem;
     border-radius: 2px;
@@ -83,7 +83,7 @@ function PlaceHolderMos({
             <Text_2>{title}</Text_2>
         </Texts>
         <Texts>
-            <Text_3>{name} 지금 체험하기 </Text_3>
+            <Text_3>{name}<br/>지금 체험하기 </Text_3>
         </Texts>
     </TextContainer>
 </Container>

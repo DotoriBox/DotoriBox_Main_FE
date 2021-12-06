@@ -48,7 +48,6 @@ function App() {
             <Route path='/experience'  component={pages.ExperiencePage}/>
             <Route path='/information' component={pages.InformPage} />
           </Switch>
-
         </Page>
     </Background>
     </Router>

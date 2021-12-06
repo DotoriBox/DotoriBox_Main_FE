@@ -31,7 +31,7 @@ const Container = styled.div`
 
 const SampleCard = styled(Card)`
   margin: 0 -33px 0 -33px;
-  word-break: keep-all;
+ 
 `;
 
 const FirstCard = styled(Card)`

@@ -44,10 +44,11 @@ const ItemFor = styled.div`
   position: absolute;
   padding: 2px;
   margin-top: 4px;
+
 `;
 
 const Name = styled.h2`
-
+   word-break: keep-all;
 `;
 
 const Card = ({

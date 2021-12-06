@@ -9,6 +9,7 @@ const Header = styled.h2`
   padding-bottom: 10px;
   font-size: 1.563rem;
   font-weight: bolder;
+  word-break: keep-all;
 `;
 
 const Button = styled.button`

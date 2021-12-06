@@ -72,12 +72,13 @@ const ViewInfo = styled.div`
   width: fit-content;
   padding: 1px 3px 1px 2px;
   display: flex;
+  position: relative;
 `;
 
 const SampleCard = styled(Card)`
   margin: 0;
-  position: fixed;
-  top: 12rem;
+  z-index: 5;
+  position: absolute;
 `;
 
 const SearchIcon = styled(BiSearchAlt2)`

@@ -126,7 +126,7 @@ function RecommendPage() {
             <MiniCard />
           </MiniCards> */}
       <Placeholders>
-          {samples.slice(6,samples.length).map((elem, index) => { return(
+          {samples.slice(5, samples.length).map((elem, index) => { return(
             <PlaceHolderMos
             onClick={() => onClick(elem.id, elem.stock)}
             sampleImage={elem.sample.cardImage}

@@ -69,7 +69,7 @@ const Texts = styled.div`
 `;
 
 const Right = styled(FiChevronRight)`
-    margin: auto 20px auto auto;
+    margin: auto 2px auto auto;
 `;
 
 function PlaceHolderMos({ 
@@ -89,7 +89,7 @@ function PlaceHolderMos({
             <Text_2>{title}</Text_2>
         </Texts>
         <Texts>
-            <Text_3>{name} 지금 체험하기 </Text_3>
+            <Text_3>{name} <br/> 지금 체험하기 </Text_3>
         </Texts>
     </TextContainer>
     <Right size="1.5rem" />

@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import mostans from "../img/mostans.jpeg";
-
+import {FiChevronRight} from 'react-icons/fi';
+ 
 const Container = styled.div`
     width: 100%;
     height: 8.063rem;
@@ -66,6 +66,10 @@ const Texts = styled.div`
     margin : 2.5px 0 5px 0;
 `;
 
+const Right = styled(FiChevronRight)`
+    margin-left: 30px;
+`;
+
 function PlaceHolderMos({ 
     index,
     sampleImage,
@@ -86,8 +90,10 @@ function PlaceHolderMos({
             <Text_3>{name}<br/>지금 체험하기 </Text_3>
         </Texts>
     </TextContainer>
+    <Right size="1.5rem" />
 </Container>
    )        
 }
 
 export default PlaceHolderMos;
+

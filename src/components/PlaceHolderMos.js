@@ -69,7 +69,7 @@ const Texts = styled.div`
 `;
 
 const Right = styled(FiChevronRight)`
-    margin: auto 2px auto auto;
+    margin: auto 20px auto auto;
 `;
 
 function PlaceHolderMos({ 

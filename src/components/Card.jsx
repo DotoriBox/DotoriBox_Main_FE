@@ -5,7 +5,7 @@ const SampleImage = styled.div`
   display: block;
   margin: 6% auto 10% 0;
   width: 1vw;
-  height: 48vh;
+  height: 1.56vw;
   max-width: 500px;
   position: relative;
   min-width: 330px;

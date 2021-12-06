@@ -31,6 +31,7 @@ const TextContainer = styled.div`
     flex-direction: column;
     /* top: 10px; */
     left: 10px;
+    
 `;
 
 const Text_1 = styled.div`
@@ -60,6 +61,7 @@ const Text_3 = styled.div`
     height: 0.813rem;
     border-radius: 2px;
     margin : auto auto 5% 4%;
+    word-break: normal;
 `;
 
 const Texts = styled.div`
@@ -67,7 +69,7 @@ const Texts = styled.div`
 `;
 
 const Right = styled(FiChevronRight)`
-    margin-left: 30px;
+    margin: auto 20px auto auto;
 `;
 
 function PlaceHolderMos({ 
@@ -87,7 +89,7 @@ function PlaceHolderMos({
             <Text_2>{title}</Text_2>
         </Texts>
         <Texts>
-            <Text_3>{name}<br/>지금 체험하기 </Text_3>
+            <Text_3>{name} 지금 체험하기 </Text_3>
         </Texts>
     </TextContainer>
     <Right size="1.5rem" />

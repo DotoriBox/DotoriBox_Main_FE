@@ -36,7 +36,7 @@ const Block = styled.div`
 function App() {
   return (
     <Router>
-    <Background>
+    <Background >
         <Nav />
         <Page>
           <Block />

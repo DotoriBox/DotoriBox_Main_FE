@@ -71,7 +71,7 @@ const ViewInfo = styled.div`
   font-size: 0.7rem;
   width: fit-content;
   padding: 1px 3px 1px 2px;
-  display: flex;
+  display: flex;  
 `;
 
 const SampleCard = styled(Card)`

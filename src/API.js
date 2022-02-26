@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const API = axios.create({
-  baseURL: `http://${process.env.REACT_APP_API_SOURCE}`
+  baseURL: `http://101.79.8.239`
 });
 
 export const TaxiAPI = {

@@ -25,7 +25,7 @@ const NavBar = styled.div`
   display: flex;
   vertical-align: center;
   z-index: 1001;
-  background-color: ${props => props.isFirst ? 'transparent' : '#FFFFFF'}
+  background-color: ${props => props.isFirst ? 'transparent' : '#FFFFFF'};
 `;
 
 const MenuIcon = styled(FaIcons.FaBars)`
@@ -50,7 +50,7 @@ const NavMenu = styled.nav`
 
 const List = styled.ul`
   list-style-type: none;
-  margin: 0 0 0 25px;
+  margin: 0 0 0 -15px;
 `;
 
 const ListContent = styled.li`
@@ -63,7 +63,7 @@ const ListContentText = styled.a`
   font-size: 0.938rem;
   line-height: 1.3rem;
   font-weight: 500;
-`
+`;
 
 function Navbar() {
   const [sidebar, setSidebar] = useState(false);
